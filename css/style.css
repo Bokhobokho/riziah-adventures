@@ -1,0 +1,1120 @@
+/* ==========================================================
+   RIZIAH ADVENTURES
+   Main Stylesheet
+   ========================================================== */
+
+/* ==========================
+   BASE
+========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+    background: transparent;
+    transition: .4s;
+    padding: 20px 0;
+}
+
+.navbar.scrolled {
+    background: #2E5E2B;
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+
+.navbar-logo {
+    height: 45px;
+    width: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.nav-link:hover {
+    color: #C9853A !important;
+}
+
+/* Mobile hamburger button */
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, .6);
+    padding: 7px 10px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+    );
+}
+
+/* ==========================
+   HERO SLIDER
+========================== */
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .carousel,
+.hero .carousel-inner,
+.hero .carousel-item {
+    height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .55);
+}
+
+.hero-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-caption h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-caption p {
+    color: white;
+    font-size: 21px;
+    max-width: 750px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+}
+
+.hero-caption .btn {
+    padding: 13px 28px;
+    font-weight: 600;
+}
+
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+    width: 8%;
+    z-index: 3;
+}
+
+.hero .carousel-indicators {
+    z-index: 3;
+}
+
+.hero .carousel-indicators button {
+    width: 35px;
+    height: 4px;
+    margin: 0 5px;
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about {
+    background: #ffffff;
+}
+
+.section-title {
+    color: #A64C2D;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.about h2 {
+    font-weight: 700;
+    color: #222;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.about img {
+    transition: .4s;
+}
+
+.about img:hover {
+    transform: scale(1.03);
+}
+
+/* About image */
+
+.about-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+}
+
+.about-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.about-image-wrapper:hover .about-image {
+    transform: scale(1.04);
+}
+
+/* About features */
+
+.about-features {
+    margin-top: 25px;
+}
+
+.about-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2E5E2B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.about-feature h5 {
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+
+.about-feature p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats {
+    background: #2E5E2B;
+    color: white;
+}
+
+.stats h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #C9853A;
+}
+
+.stats p {
+    font-size: 18px;
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+.services {
+    background: #f8f9fa;
+}
+
+.services h2 {
+    font-weight: 700;
+}
+
+.service-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .4s;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+}
+
+.service-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.08);
+}
+
+.service-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.service-content h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    color: #666;
+    line-height: 1.7;
+    min-height: 90px;
+}
+
+/* ==========================
+   TOUR PACKAGES
+========================== */
+
+.packages {
+    background: #f8f9fa;
+}
+
+.package-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: .4s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+}
+
+.package-image {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .4s ease;
+}
+
+.package-card:hover .package-image img {
+    transform: scale(1.05);
+}
+
+.package-duration {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #2E5E2B;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.package-content {
+    padding: 30px;
+}
+
+.package-content h3 {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.package-content h5 {
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.package-price {
+    color: #A64C2D;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.package-price span {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.package-content > p:not(.package-price) {
+    color: #666;
+    line-height: 1.7;
+}
+
+.package-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+.package-list li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.package-list i {
+    color: #2E5E2B;
+    margin-right: 10px;
+}
+
+.package-btn {
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+}
+
+/* Cultural package note */
+
+.package-note {
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #C9853A;
+    border-radius: 8px;
+    color: #555;
+    font-style: italic;
+}
+
+.package-note i {
+    color: #C9853A;
+    margin-right: 8px;
+}
+
+/* ==========================
+   DESTINATIONS
+========================== */
+
+.destinations {
+    background: #ffffff;
+}
+
+.destination-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+    height: 100%;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.destination-card:hover img {
+    transform: scale(1.08);
+}
+
+.destination-content {
+    padding: 25px;
+}
+
+.destination-content h4 {
+    font-weight: 600;
+}
+
+.destination-content p {
+    color: #666;
+    min-height: 90px;
+}
+
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+.why-us {
+    background: #f8f9fa;
+}
+
+.why-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .07);
+    transition: .4s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+}
+
+.why-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #2E5E2B;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: .4s ease;
+}
+
+.why-card:hover .why-icon {
+    background: #C9853A;
+    transform: rotateY(180deg);
+}
+
+.why-card h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery {
+    background: #f8f9fa;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+.contact-section {
+    background: #ffffff;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    height: 100%;
+}
+
+.contact-card p {
+    font-size: 17px;
+    color: #555;
+}
+
+.contact-card h4 {
+    font-weight: 700;
+}
+
+/* Contact information */
+
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: #2E5E2B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.whatsapp-contact {
+    background: #25D366;
+}
+
+.contact-info h6 {
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+
+.contact-info a {
+    color: #A64C2D;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #2E5E2B;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #555;
+}
+
+.contact-social {
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+/* Contact WhatsApp button */
+
+.contact-whatsapp {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    padding: 13px;
+    background: #25D366;
+    color: white;
+    border: none;
+}
+
+.contact-whatsapp:hover {
+    background: #20ba5a;
+    color: white;
+}
+
+/* Contact form */
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.contact-card .form-label {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.contact-card .form-control,
+.contact-card .form-select {
+    border: 1px solid #ddd;
+    padding: 12px 14px;
+}
+
+.contact-card .form-control:focus,
+.contact-card .form-select:focus {
+    border-color: #2E5E2B;
+    box-shadow: 0 0 0 .2rem rgba(46, 94, 43, .15);
+}
+
+.contact-card textarea {
+    min-height: 130px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-text {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #777;
+}
+
+/* ==========================
+   CALL TO ACTION
+========================== */
+
+.cta-section {
+    background: #2E5E2B;
+    min-height: 350px;
+}
+
+.cta-overlay {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.cta-section h2 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    color: #ffffff;
+    font-size: 19px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-whatsapp:hover {
+    background: #20ba5a;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer {
+    background: #1f3d1f;
+    color: white;
+    padding: 70px 0 0;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.footer-brand h4 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer h5 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.footer p {
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.footer a:hover {
+    color: #C9853A;
+    padding-left: 3px;
+}
+
+.footer li {
+    margin-bottom: 12px;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-contact i {
+    color: #C9853A;
+    width: 18px;
+    margin-top: 5px;
+}
+
+.footer-contact a:hover {
+    padding-left: 0;
+}
+
+/* Social icons */
+
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #2E5E2B;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    transition: .3s ease;
+}
+
+.social-icons a:hover {
+    background: #C9853A;
+    transform: translateY(-5px);
+    padding-left: 0;
+}
+
+/* Footer bottom */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* ==========================
+   WHATSAPP FLOAT BUTTON
+========================== */
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.whatsapp-text {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.whatsapp-float {
+    width: 72px;
+    height: 72px;
+    background-color: #25D366 !important;
+    color: #fff !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 36px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+    transition: .3s;
+}
+
+.whatsapp-float:hover {
+    background: #20ba5a;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    font-size: 42px;
+    color: #fff;
+    line-height: 1;
+}
+
+/* ==========================
+   MOBILE RESPONSIVENESS
+========================== */
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        background: #2E5E2B;
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    }
+
+    .navbar-nav {
+        align-items: stretch !important;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 12px 10px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hero */
+
+    .hero {
+        height: 85vh;
+    }
+
+    .hero-caption {
+        width: 90%;
+    }
+
+    .hero-caption h1 {
+        font-size: 38px;
+    }
+
+    .hero-caption p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-caption .btn {
+        padding: 11px 22px;
+        font-size: 14px;
+    }
+
+    /* About */
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+
+    /* Stats */
+
+    .stats h2 {
+        font-size: 35px;
+    }
+
+    .stats p {
+        font-size: 15px;
+    }
+
+    /* Services */
+
+    .service-card {
+        padding: 25px;
+    }
+
+    /* Destinations */
+
+    .destination-card img {
+        height: 220px;
+    }
+
+    /* Gallery */
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    /* Why Us */
+
+    .why-card {
+        padding: 30px 20px;
+    }
+
+    /* Packages */
+
+    .package-image {
+        height: 220px;
+    }
+
+    .package-content {
+        padding: 25px;
+    }
+
+    .package-content h3 {
+        font-size: 22px;
+    }
+
+    .package-price {
+        font-size: 21px;
+    }
+
+    /* Contact */
+
+    .contact-card {
+        padding: 25px;
+    }
+
+    /* CTA */
+
+    .cta-section h2 {
+        font-size: 32px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
+
+    /* WhatsApp */
+
+    .whatsapp-container {
+        bottom: 20px;
+        left: 15px;
+    }
+
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
+    }
+
+    .whatsapp-float i {
+        font-size: 30px;
+    }
+
+    .whatsapp-text {
+        display: none;
+    }
+
+    /* Back to top */
+
+    #topBtn {
+        width: 50px;
+        height: 50px;
+        right: 15px;
+        bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .navbar-logo {
+        height: 38px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+}
+
+/* ==========================
+   MOBILE FOOTER
+========================== */
+
+@media (max-width: 767px) {
+
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer-brand {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom .text-md-end {
+        text-align: center !important;
+        margin-top: 8px;
+    }
+}
